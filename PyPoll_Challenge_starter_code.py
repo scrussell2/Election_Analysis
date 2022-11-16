@@ -72,10 +72,10 @@ with open(file_to_load) as election_data:
             county_list.append(county_name)
 
             # 4c: Begin tracking the county's vote count.
-            county_votes[county_voter_turnout] = 0
+            county_votes[county_name] = 0
 
         # 5: Add a vote to that county's vote count.
-        county_votes[county_voter_turnout] += 1
+        county_votes[county_name] += 1
 
 
 # Save the results to our text file.
@@ -87,40 +87,39 @@ with open(file_to_save, "w") as txt_file:
         f"-------------------------\n"
         f"Total Votes: {total_votes:,}\n"
         f"-------------------------\n\n"
-        f"County Votes:\n"
-        f"ENTER CODE HERE\n"
-        f"ENTER CODE HERE\n"
-        f"ENTER CODE HERE\n\n"
-        f"-------------------------\n"
-        f"Largest County Turnout: ENTER CODE HERE\n"
-        f"-------------------------\n")
+        f"County Votes:\n")
     print(election_results, end="")
 
     txt_file.write(election_results)
 
     # 6a: Write a for loop to get the county from the county dictionary.
-    # for TEXT in TEXT:
+    for county_name in county_votes:
         # 6b: Retrieve the county vote count.
-
+        test_votes = county_votes.get(county_name)
         # 6c: Calculate the percentage of votes for the county.
+        test_vote_percentage = float(test_votes) / float(total_votes) * 100
+        test_county_results = (
+            f"{county_name}: {test_vote_percentage:.1f}% ({test_votes:,})\n")
+        # 6d: Print the county results to the terminal.
+        print(test_county_results) #Ask question on this, where does it get stored? System Memory?
+        # 6e: Save the county votes to a text file.
+        txt_file.write(test_county_results)
 
-
-         # 6d: Print the county results to the terminal.
-        # county_votes_results = (
-        # GOING TO HAVE TO MOVE THE PRINT FROM LINES 90-93 OVER HERE
-        # )
-
-         # 6e: Save the county votes to a text file.
-        # txt_file.write(county_votes_results)
-
-         # 6f: Write an if statement to determine the winning county and get its vote count.
-        #if (TEXT) and (TEXT)
+        # 6f: Write an if statement to determine the winning county and get its vote count.
+        if (test_votes > county_voter_turnout) #and (test_vote_percentage > test_winning_percentage):
+            test_winning_count = test_votes
+            #test_winning_percentage = test_vote_percentage
+            #winning_county = test_vote_percentage
 
     # 7: Print the county with the largest turnout to the terminal.
-    # GOING TO HAVE TO MOVE THE PRINT FROM LINES 94-96 OVER HERE
+    winning_largest_county = (
+        f"-------------------------\n"
+        f"Winner: {county_name}\n"
+        f"-------------------------\n")
+    print(winning_largest_county)
 
     # 8: Save the county with the largest turnout to a text file.
-    # txt_file.write(CREATE_A_NAME)
+    txt_file.write(winning_largest_county)
 
     # Save the final candidate vote count to the text file.
     for candidate_name in candidate_votes:
