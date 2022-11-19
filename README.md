@@ -96,18 +96,18 @@ For Python to get the votes and percentages of votes for each candidate, a '_for
 
 **Figure 11** - Python Candidate Votes and Percentages of Votes
 
-![Python_Candidate_Votes_and_Percentages_of_Votes](Python_Candidate_Votes_and_Percentages_of_Votes.png)
+![Python_Candidate_Votes_and_Percentages_of_Votes](Images/Python_Candidate_Votes_and_Percentages_of_Votes.png)
 
 #### Winning Candidate
-** Figure 12** - Winning Candidate
+**Figure 12** - Winning Candidate
 
 ![Winning_Candidate](Images/Winning_Candidate.png)
 
-The winning candidate was written in Python as an '_if_' statement within the above-mentioned '_for_' loop on _lines 126-137_ which is of a similar pattern that was seen earlier with the largest county turnout.  This told Python that for every vote per candidate that is greater than the winning count save them as the highest until you finish the loop.  In other words, save the candidate with the highest votes and only that candidate.  Additionally on the '_if_' statement on line 140, Python was instructed with an '_and_' for the percentage of votes to function similarly to the votes at the beginning of the '_if_' statement.  Lines 146-155 instructed Python on how to print and save the output to the _election_analysis.txt_. Reference **Figure 9**.
+The winning candidate was written in Python as an '_if_' statement within the above-mentioned '_for_' loop on _lines 126-137_ which is of a similar pattern that was seen earlier with the largest county turnout.  This told Python that for every vote per candidate that is greater than the winning count save them as the highest until you finish the loop.  In other words, save the candidate with the highest votes and only that candidate.  Additionally on the '_if_' statement on line 140, Python was instructed with an '_and_' for the percentage of votes to function similarly to the votes at the beginning of the '_if_' statement.  Lines 146-155 instructed Python on how to print and save the output to the _election_analysis.txt_. Reference **Figure 13**.
 
 **Figure 13** - Python Winning Candidate
 
-![Python_Winning_Candidate](Python_Winning_Candidate.png)
+![Python_Winning_Candidate](Images/Python_Winning_Candidate.png)
 
 ## Election Audit Summary
 
