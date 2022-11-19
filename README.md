@@ -96,7 +96,7 @@ For Python to get the votes and percentages of votes for each candidate, a '_for
 
 **Figure 11** - Python Candidate Votes and Percentages of Votes
 
-![Python_Candidate_Votes_and_Percentages_of_Votes]()
+![Python_Candidate_Votes_and_Percentages_of_Votes](Python_Candidate_Votes_and_Percentages_of_Votes.png)
 
 #### Winning Candidate
 ** Figure 12** - Winning Candidate
