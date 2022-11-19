@@ -113,4 +113,7 @@ The winning candidate was written in Python as an '_if_' statement within the ab
 
 As a proposal, this Python script can be used in any future county elections to gather the same data seen in this analysis with augmentation to the script.  My recommendation on how that is accomplished is seen below:
 
-1. 
+1. Changing the CSV file to load new or different datasets.
+	
+	file_to_load = os.path.join("Resources", "election_results.csv")
+2.
