@@ -67,11 +67,26 @@ In order for the total votes to be printed out and saved, Python was instructed 
 
 #### County Votes and Percentages of Votes
 **Figure 6** - County Votes and Percentages of Votes
-INSERT IMAGE
+
+![County_Votes_and_Percentages_of_Votes](Images/County_Votes_and_Percentages_of_Votes.png)
+
+For Python to get the votes and percentages of votes for each county, a '_for_' loop needed to be created.  On _line 97_ a '_for_' loop is created to pull county names from an earlier written '_if_' statement and checking for every time a specific county is seen in the csv file to count each vote.  In _lines 99-107_, Python is instructed to pull the number of votes per county and to calculate a percentage on the total number recieved which then is printed as an output and saved in the text file of each county as thier own unique percentage and votes against the total votes overall casted. Reference **Figure 7**.
+
+**Figure 7** - Python County Votes and Percentages of Votes
+
+![Python_County_Votes_and_Percentages_of_Votes](Images/Python_County_Votes)
 
 #### Largest County Turnout
-**Figure X** - Largest County Turnout
-INSERT IMAGE
+**Figure 8** - Largest County Turnout
+
+![Largest_County_Turnout](Images/Largest_County_Turnout.png)
+
+The 'Largest County Turnout' was written in Python as an '_if_' statement within the above mentioned '_for_' loop on _lines 110-113_.  This told Python that for every vote per county that is greater than the winning count to save them as the highest until you finish the loop.  In other words, save the county with the highest votes and only that county.  Additionally on the '_if_' statement on line 110, Python was instructed with an '_and_' for the percentage of votes to function similar to the votes at the beginnig of the '_if_' statement.  Once _line 110_ finished through it's iterations
+
+**Figure 9**
+
+![Python_Largest_County_Turnout](Images/Python_Largest_County_Turnout.png)
+
 
 #### Candidate Votes and Percentages of Votes
 **Figure X** - Candidate Votes and Percentages of Votes
