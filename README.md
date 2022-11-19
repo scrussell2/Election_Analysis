@@ -117,13 +117,19 @@ As a proposal, this Python script can be used in any future county elections to 
 	
 	file_to_load = os.path.join("Resources", "election_results.csv")
 
-In the above code snip, we can see that Python is pulling a CSV from the given computer to a directory called "_Resources_" and opening the "election_results.csv".  In the future, this line of code can be augmented to point to another path that the Election Commission saves this dataset in.  For example, let's say the new folder is named "Region6" and the new CSV file is named "Region6_Results.csv".
+In the above code snip, we can see that Python is pulling a CSV from the given computer to a directory called "_Resources_" and opening the "_election_results.csv_".  In the future, this line of code can be augmented to point to another path that the Election Commission saves this dataset in.  For example, let's say the new directory is named "_Region6_" and the new CSV file is named "_Region6_Results.csv_".
 
 	file_to_load = os.path.join("Region6", "Region6_Results.csv")
 
+**Modification 2** - Changing the path to save the output of this data.
 
+	file_to_save = os.path.join("analysis", "election_analysis.txt")
 
+Similarly to what is seen in **Modification 1**, this code snip is instructing Python to save any outputs to a directory called "_analysis_" and saving to a text file named "_election_analysis.txt_".  In the future this line of code can be augmented to point to another path in the given computer to that the Election Commission prefers.  For example, let's say the new save location will be in a directory named "_Year_2022_" and the text file is named "_Region6_Analysis.txt_".
 
+	file_to_save = os.path.join("Year_2022", "Region6_Analysis.txt")
+	
+The reason for both of these reccomendations is to limit any actual changes to the core or rest of the Python script as to prevent any confusion as time goes by.  This allows for any elections with the similar dataset provided in the original "_election_results.csv_" to be ran and saved in different ways that is the most applicable in storing and recalling these files for future use.
 
 
 
