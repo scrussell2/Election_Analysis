@@ -113,7 +113,21 @@ The winning candidate was written in Python as an '_if_' statement within the ab
 
 As a proposal, this Python script can be used in any future county elections to gather the same data seen in this analysis with augmentation to the script.  My recommendation on how that is accomplished is seen below:
 
-1. Changing the CSV file to load new or different datasets.
+**Modification 1** - Changing the CSV file to load new or different datasets.
 	
 	file_to_load = os.path.join("Resources", "election_results.csv")
-2.
+
+In the above code snip, we can see that Python is pulling a CSV from the given computer to a directory called "_Resources_" and opening the "election_results.csv".  In the future, this line of code can be augmented to point to another path that the Election Commission saves this dataset in.  For example, let's say the new folder is named "Region6" and the new CSV file is named "Region6_Results.csv".
+
+	file_to_load = os.path.join("Region6", "Region6_Results.csv")
+
+
+
+
+
+
+
+
+
+
+
