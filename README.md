@@ -74,14 +74,14 @@ For Python to get the votes and percentages of votes for each county, a '_for_' 
 
 **Figure 7** - Python County Votes and Percentages of Votes
 
-![Python_County_Votes_and_Percentages_of_Votes](Images/Python_County_Votes)
+![Python_County_Votes](Images/Python_County_Votes)
 
 #### Largest County Turnout
 **Figure 8** - Largest County Turnout
 
 ![Largest_County_Turnout](Images/Largest_County_Turnout.png)
 
-The 'Largest County Turnout' was written in Python as an '_if_' statement within the above mentioned '_for_' loop on _lines 110-113_.  This told Python that for every vote per county that is greater than the winning count to save them as the highest until you finish the loop.  In other words, save the county with the highest votes and only that county.  Additionally on the '_if_' statement on line 110, Python was instructed with an '_and_' for the percentage of votes to function similar to the votes at the beginnig of the '_if_' statement.  Once _line 110_ finished through it's iterations
+The 'Largest County Turnout' was written in Python as an '_if_' statement within the above mentioned '_for_' loop on _lines 110-113_.  This told Python that for every vote per county that is greater than the winning count to save them as the highest until you finish the loop.  In other words, save the county with the highest votes and only that county.  Additionally on the '_if_' statement on line 110, Python was instructed with an '_and_' for the percentage of votes to function similar to the votes at the beginnig of the '_if_' statement.  Lines 116-123 instructed Python how to print and save the output to a the _election_analysis.txt_.
 
 **Figure 9**
 
