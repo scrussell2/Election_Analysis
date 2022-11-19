@@ -36,29 +36,34 @@ The analysis of the election show that (shown in **Figure 1**):
   - Candidate Diana Degette, who received "73.8%" of the vote and "85,213" number of votes.
 
 **Figure 1** - Election Results
-INSERT IMAGE
+
+![Election_Results](Images/Election_Results.png)
 
 ## Python Code
 In this section we will go over the Python code that was used to extract the data from the given 'CSV' from the Election Commission Board and calculate the given totals and percentages that we have seen above.
 
 #### Total Votes
 **Figure 2** - Total Votes
-INSERT IMAGE
+
+![Total_Votes](Images/Election_Results_Total_Votes.png)
 
 To calculate the total votes that were cast in this congressional election seen in **Figure 2**, the given *election_results.csv* needed to be loaded first so Python had a reference point to pull the necessary data seen in **Figure 3**.
 
 **Figure 3** - Election Results CSV Example
-INSERT IMAGE
+
+![Election_Results_CSV_Example](Images/Election_Results_csv_Example.png)
 
 Next, a variable was created on *line 14* to initialize the vote counter and it was set to zero.  On *lines 37-47* Python is instructed to open the *election_results.csv* and read the data as a variable called *election_data* and to read the header information in each column but to skip it as data used for votes. Reference **Figure 4**.
 
 **Figure 4** - Python Total Votes
-INSERT IMAGE
+
+![Python_Total_Votes](Images/Python_Total_Votes_1.png)
 
 In order for the total votes to be printed out and saved, Python was instructed to open a text file called *election_analysis.txt* on *line 83*, a variable called *election_results* on *line 86* was created to house the total votes and print to the text file, and on *line 94* to save the total votes and the printed information to the *election_results.txt*. Reference **Figure 5**.
 
 **Figure 5** - Python Total Votes Print Ouput and Save
-INSERT IMAGE
+
+![Python_Total_Votes_Print_Output_and_Save](Images/Python_Total_Votes_2.png)
 
 #### County Votes and Percentages of Votes
 **Figure 6** - County Votes and Percentages of Votes
