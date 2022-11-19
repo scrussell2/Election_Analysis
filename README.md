@@ -92,10 +92,17 @@ The 'Largest County Turnout' was written in Python as an '_if_' statement within
 
 ![Candidate_Votes_and_Percentages_of_Votes](Images/Candidate_Votes_and_Percentages_of_Votes)
 
+For Python to get the votes and percentages of votes for each candidate, a '_for_' loop needed to be created which is of similar pattern that was seen earlier with county votes and percentages of votes.  On _line 126_ a '_for_' loop is created to pull county names from an earlier written '_if_' statement and checking for every time a specific candidate is seen in the csv file to count each vote.  In _lines 129-137_, Python is instructed to pull the number of votes per candidate and to calculate a percentage on the total number recieved which then is printed as an output and saved in the text file of each county as thier own unique percentage and votes against the total votes overall casted. Reference **Figure 11**.
 
+**Figure 11** - Python Candidate Votes and Percentages of Votes
+
+![]()
 
 #### Winning Candidate
-** Figure X** - Winning Candidate
-INSERT IMAGE
+** Figure 12** - Winning Candidate
+
+![]()
+
+**Figure 13** - Python Winning Candidate
 
 ## Election Audit Summary
