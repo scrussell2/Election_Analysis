@@ -74,7 +74,7 @@ For Python to get the votes and percentages of votes for each county, a '_for_' 
 
 **Figure 7** - Python County Votes and Percentages of Votes
 
-![Python_County_Votes](Images/Python_County_Votes)
+![Python_County_Votes](Images/Python_County_Votes.png)
 
 #### Largest County Turnout
 **Figure 8** - Largest County Turnout
@@ -90,19 +90,23 @@ The 'Largest County Turnout' was written in Python as an '_if_' statement within
 #### Candidate Votes and Percentages of Votes
 **Figure 10** - Candidate Votes and Percentages of Votes
 
-![Candidate_Votes_and_Percentages_of_Votes](Images/Candidate_Votes_and_Percentages_of_Votes)
+![Candidate_Votes_and_Percentages_of_Votes](Images/Candidate_Votes_and_Percentages_of_Votes.png)
 
 For Python to get the votes and percentages of votes for each candidate, a '_for_' loop needed to be created which is of similar pattern that was seen earlier with county votes and percentages of votes.  On _line 126_ a '_for_' loop is created to pull county names from an earlier written '_if_' statement and checking for every time a specific candidate is seen in the csv file to count each vote.  In _lines 129-137_, Python is instructed to pull the number of votes per candidate and to calculate a percentage on the total number recieved which then is printed as an output and saved in the text file of each county as thier own unique percentage and votes against the total votes overall casted. Reference **Figure 11**.
 
 **Figure 11** - Python Candidate Votes and Percentages of Votes
 
-![]()
+![Python_Candidate_Votes_and_Percentages_of_Votes]()
 
 #### Winning Candidate
 ** Figure 12** - Winning Candidate
 
-![]()
+![Winning_Candidate](Images/Winning_Candidate.png)
+
+The winning candidate was written in Python as an '_if_' statement within the above mentioned '_for_' loop on _lines 126-137_ which is of similar pattern that was seen earlier with the largest county turnout.  This told Python that for every vote per candidate that is greater than the winning count to save them as the highest until you finish the loop.  In other words, save the candidate with the highest votes and only that candidate.  Additionally on the '_if_' statement on line 140, Python was instructed with an '_and_' for the percentage of votes to function similar to the votes at the beginnig of the '_if_' statement.  Lines 146-155 instructed Python how to print and save the output to a the _election_analysis.txt_. Reference **Figure 9**.
 
 **Figure 13** - Python Winning Candidate
+
+![Python_Winning_Candidate](Python_Winning_Candidate.png)
 
 ## Election Audit Summary
