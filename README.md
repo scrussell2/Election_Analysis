@@ -1,7 +1,7 @@
 # Election_Analysis
 
 ## Analysis Overview
-The 'Election Analysis' report was request by a Colorado Election Commmission Board for a breakdown of the voter turnout for each county, percentage of votes from each county out of the total count, and the county with the highest turnout.  For this analysis, the below were the specified requirements asked.
+The 'Election Analysis' report was requested by a Colorado Election Commmission Board for a breakdown of the voter turnout for each county, percentage of votes from each county out of the total count, and the county with the highest turnout.  For this analysis, the below were the specified requirements asked.
 
 1. Calculate the total number of votes cast.
 2. Calculate the total number of votes from each county.
